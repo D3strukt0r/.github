@@ -1,2 +1,11 @@
-repo:
-  - ./*
+Documentation:
+- changed-files:
+  - any-glob-to-any-file: '**/*.md'
+
+Feature:
+ - head-branch: ['^feature', 'feature']
+
+Release:
+- all:
+  - base-branch: 'master'
+  - head-branch: ['^release', 'release']
